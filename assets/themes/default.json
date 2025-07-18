@@ -1,0 +1,18 @@
+{
+  "name": "default",
+  "description": "Default oskway theme",
+  "background_color": [0.2, 0.2, 0.2, 1.0],
+  "key_color": [0.8, 0.8, 0.8, 1.0],
+  "key_pressed_color": [0.6, 0.6, 0.6, 1.0],
+  "key_hover_color": [0.7, 0.7, 0.7, 1.0],
+  "text_color": [0.0, 0.0, 0.0, 1.0],
+  "border_color": [0.5, 0.5, 0.5, 1.0],
+  "font_size": 16,
+  "border_radius": 4,
+  "border_width": 1,
+  "key_padding": 2,
+  "shadow_enabled": true,
+  "shadow_color": [0.0, 0.0, 0.0, 0.3],
+  "shadow_offset": [2, 2],
+  "shadow_blur": 4
+}

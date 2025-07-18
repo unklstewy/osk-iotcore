@@ -1,0 +1,18 @@
+{
+  "name": "minimalist",
+  "description": "Clean minimalist theme with monochromatic design",
+  "background_color": [0.98, 0.98, 0.98, 1.0],
+  "key_color": [0.92, 0.92, 0.92, 1.0],
+  "key_pressed_color": [0.85, 0.85, 0.85, 1.0],
+  "key_hover_color": [0.88, 0.88, 0.88, 1.0],
+  "text_color": [0.15, 0.15, 0.15, 1.0],
+  "border_color": [0.80, 0.80, 0.80, 1.0],
+  "font_size": 16,
+  "border_radius": 2,
+  "border_width": 1,
+  "key_padding": 2,
+  "shadow_enabled": false,
+  "shadow_color": [0.0, 0.0, 0.0, 0.0],
+  "shadow_offset": [0, 0],
+  "shadow_blur": 0
+}

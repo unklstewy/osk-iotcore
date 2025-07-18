@@ -1,0 +1,117 @@
+# golangci-lint configuration file
+version: 2
+run:
+  timeout: 5m
+  issues-exit-code: 1
+  tests: true
+  skip-dirs:
+    - vendor/
+    - .git/
+    - build/
+    - coverage/
+  skip-files:
+    - ".*\\.pb\\.go$"
+    - ".*_generated\\.go$"
+
+output:
+  format: colored-line-number
+  print-issued-line: true
+  print-linter-name: true
+  uniq-by-line: true
+
+linters-settings:
+  govet:
+    check-shadowing: true
+    settings:
+      printf:
+        funcs:
+          - (github.com/golangci/golangci-lint/pkg/logutils.Log).Infof
+          - (github.com/golangci/golangci-lint/pkg/logutils.Log).Warnf
+          - (github.com/golangci/golangci-lint/pkg/logutils.Log).Errorf
+          - (github.com/golangci/golangci-lint/pkg/logutils.Log).Fatalf
+
+  goimports:
+    local-prefixes: github.com/iotcore/osk-iotcore
+
+  gocyclo:
+    min-complexity: 15
+
+  dupl:
+    threshold: 100
+
+  goconst:
+    min-len: 2
+    min-occurrences: 2
+
+  misspell:
+    locale: US
+
+  lll:
+    line-length: 140
+
+  gofmt:
+    simplify: false
+
+  revive:
+    severity: warning
+    rules:
+      - name: var-naming
+      - name: package-comments
+      - name: dot-imports
+      - name: blank-imports
+      - name: exported
+      - name: var-declaration
+      - name: package-declaration
+      - name: range
+      - name: receiver-naming
+      - name: time-naming
+      - name: unexported-return
+      - name: indent-error-flow
+      - name: errorf
+      - name: empty-block
+      - name: superfluous-else
+      - name: unused-parameter
+      - name: unreachable-code
+      - name: redefines-builtin-id
+
+  staticcheck:
+    go: "1.22"
+    checks: ["all"]
+
+linters:
+  enable:
+    - errcheck
+    - govet
+    - ineffassign
+    - staticcheck
+    - unused
+    - misspell
+    - unconvert
+    - unparam
+
+issues:
+  exclude-rules:
+    - path: _test\.go
+      linters:
+        - gomnd
+        - funlen
+        - gocyclo
+        - gosec
+        
+    - path: cmd/
+      linters:
+        - gochecknoinits
+        
+    - linters:
+        - lll
+      source: "^//go:generate "
+
+  exclude:
+    - 'declaration of "(err|ctx)" shadows declaration at'
+    - 'exported function .* should have comment.*'
+    - 'exported type .* should have comment.*'
+    - 'exported var .* should have comment.*'
+    - 'exported const .* should have comment.*'
+
+  max-issues-per-linter: 0
+  max-same-issues: 0

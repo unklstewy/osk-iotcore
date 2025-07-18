@@ -1,0 +1,45 @@
+{
+  "name": "style_three",
+  "description": "Compact mobile QWERTY keyboard layout with emoji and special function keys",
+  "width": 750,
+  "height": 320,
+  "keys": [
+    {"id": "q", "label": "Q", "code": 16, "x": 15, "y": 15, "width": 65, "height": 60},
+    {"id": "w", "label": "W", "code": 17, "x": 90, "y": 15, "width": 65, "height": 60},
+    {"id": "e", "label": "E", "code": 18, "x": 165, "y": 15, "width": 65, "height": 60},
+    {"id": "r", "label": "R", "code": 19, "x": 240, "y": 15, "width": 65, "height": 60},
+    {"id": "t", "label": "T", "code": 20, "x": 315, "y": 15, "width": 65, "height": 60},
+    {"id": "y", "label": "Y", "code": 21, "x": 390, "y": 15, "width": 65, "height": 60},
+    {"id": "u", "label": "U", "code": 22, "x": 465, "y": 15, "width": 65, "height": 60},
+    {"id": "i", "label": "I", "code": 23, "x": 540, "y": 15, "width": 65, "height": 60},
+    {"id": "o", "label": "O", "code": 24, "x": 615, "y": 15, "width": 65, "height": 60},
+    {"id": "p", "label": "P", "code": 25, "x": 685, "y": 15, "width": 65, "height": 60},
+    
+    {"id": "a", "label": "A", "code": 30, "x": 47, "y": 85, "width": 65, "height": 60},
+    {"id": "s", "label": "S", "code": 31, "x": 122, "y": 85, "width": 65, "height": 60},
+    {"id": "d", "label": "D", "code": 32, "x": 197, "y": 85, "width": 65, "height": 60},
+    {"id": "f", "label": "F", "code": 33, "x": 272, "y": 85, "width": 65, "height": 60},
+    {"id": "g", "label": "G", "code": 34, "x": 347, "y": 85, "width": 65, "height": 60},
+    {"id": "h", "label": "H", "code": 35, "x": 422, "y": 85, "width": 65, "height": 60},
+    {"id": "j", "label": "J", "code": 36, "x": 497, "y": 85, "width": 65, "height": 60},
+    {"id": "k", "label": "K", "code": 37, "x": 572, "y": 85, "width": 65, "height": 60},
+    {"id": "l", "label": "L", "code": 38, "x": 647, "y": 85, "width": 65, "height": 60},
+    
+    {"id": "shift", "label": "⇧", "code": 42, "x": 15, "y": 155, "width": 85, "height": 60, "modifier": true},
+    {"id": "z", "label": "Z", "code": 44, "x": 110, "y": 155, "width": 65, "height": 60},
+    {"id": "x", "label": "X", "code": 45, "x": 185, "y": 155, "width": 65, "height": 60},
+    {"id": "c", "label": "C", "code": 46, "x": 260, "y": 155, "width": 65, "height": 60},
+    {"id": "v", "label": "V", "code": 47, "x": 335, "y": 155, "width": 65, "height": 60},
+    {"id": "b", "label": "B", "code": 48, "x": 410, "y": 155, "width": 65, "height": 60},
+    {"id": "n", "label": "N", "code": 49, "x": 485, "y": 155, "width": 65, "height": 60},
+    {"id": "m", "label": "M", "code": 50, "x": 560, "y": 155, "width": 65, "height": 60},
+    {"id": "backspace", "label": "⌫", "code": 14, "x": 635, "y": 155, "width": 85, "height": 60},
+    
+    {"id": "numbers", "label": "123", "code": -1, "x": 15, "y": 225, "width": 75, "height": 60},
+    {"id": "emoji", "label": "😊", "code": -5, "x": 100, "y": 225, "width": 65, "height": 60},
+    {"id": "comma", "label": ",", "code": 51, "x": 175, "y": 225, "width": 65, "height": 60},
+    {"id": "space", "label": "Space", "code": 57, "x": 250, "y": 225, "width": 280, "height": 60},
+    {"id": "dot", "label": ".", "code": 52, "x": 540, "y": 225, "width": 65, "height": 60},
+    {"id": "enter", "label": "↵", "code": 28, "x": 615, "y": 225, "width": 120, "height": 60}
+  ]
+}

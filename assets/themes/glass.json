@@ -1,0 +1,18 @@
+{
+  "name": "glass",
+  "description": "Modern glass theme with translucent effects",
+  "background_color": [0.08, 0.08, 0.12, 0.85],
+  "key_color": [0.20, 0.20, 0.25, 0.70],
+  "key_pressed_color": [0.15, 0.15, 0.20, 0.80],
+  "key_hover_color": [0.25, 0.25, 0.30, 0.75],
+  "text_color": [0.95, 0.95, 0.98, 1.0],
+  "border_color": [0.40, 0.40, 0.45, 0.60],
+  "font_size": 16,
+  "border_radius": 12,
+  "border_width": 1,
+  "key_padding": 4,
+  "shadow_enabled": true,
+  "shadow_color": [0.0, 0.0, 0.0, 0.4],
+  "shadow_offset": [0, 4],
+  "shadow_blur": 12
+}
