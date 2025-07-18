@@ -1,0 +1,26 @@
+# Global code owners - these users will be requested for review when someone opens a pull request
+* @unklstewy
+
+# Documentation owners
+*.md @unklstewy
+docs/ @unklstewy
+
+# Configuration files
+*.json @unklstewy
+*.yaml @unklstewy
+*.yml @unklstewy
+*.toml @unklstewy
+
+# CI/CD pipeline
+.github/ @unklstewy
+.gitlab-ci.yml @unklstewy
+
+# Docker and deployment
+Dockerfile @unklstewy
+docker-compose.yml @unklstewy
+k8s/ @unklstewy
+deployment/ @unklstewy
+
+# License and legal
+LICENSE @unklstewy
+CODEOWNERS @unklstewy
