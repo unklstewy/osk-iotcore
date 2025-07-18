@@ -1,37 +1,30 @@
 # OSK IoT Core
 
-A comprehensive IoT core platform for managing and orchestrating Internet of Things devices and services.
+An on-screen keyboard written in GoLang with support for Wayland and X11.
 
 ## Overview
 
-OSK IoT Core is designed to provide a robust, scalable foundation for IoT device management, data collection, and service orchestration. This platform enables seamless integration of diverse IoT devices while providing secure, reliable communication and data processing capabilities.
+OSK IoT Core provides an efficient and customizable on-screen keyboard tailored for Linux environments, supporting both Wayland and X11 display servers. Developed in GoLang, it offers smooth integration with modern desktop environments.
 
 ## Features
 
-- **Device Management**: Comprehensive device lifecycle management including provisioning, monitoring, and maintenance
-- **Data Processing**: Real-time data ingestion, processing, and analytics
-- **Security**: End-to-end encryption and secure device authentication
-- **Scalability**: Horizontally scalable architecture supporting thousands of connected devices
-- **API Integration**: RESTful APIs for third-party integrations and custom applications
-- **Dashboard**: Web-based management interface for monitoring and control
+- **Customizable Layouts**: Easily design and use custom keyboard layouts.
+- **Wayland and X11 Support**: Seamless operation across the most common Linux display servers.
+- **Efficiency**: Designed for minimal resource consumption and high performance.
+- **Open Source**: Contributions are welcome to improve and expand functionality.
 
 ## Architecture
 
-The platform follows a microservices architecture with the following key components:
-
-- **Device Gateway**: Handles device connections and protocol translation
-- **Data Pipeline**: Processes and routes IoT data streams
-- **Device Registry**: Manages device metadata and configurations
-- **Analytics Engine**: Provides real-time analytics and insights
-- **API Gateway**: Manages external API access and authentication
+The keyboard utilizes Go's concurrency features to handle input efficiently, supporting distinct modules for Wayland and X11 environments.
 
 ## Getting Started
 
 ### Prerequisites
 
-- Docker and Docker Compose
-- Node.js 18+ (for development)
-- PostgreSQL 14+ (for production deployments)
+- Go 1.21+ (for development)
+- Wayland development libraries (for Wayland support)
+- X11 development libraries (for X11 support)
+- GTK+ 3.0+ development libraries
 
 ### Installation
 
@@ -40,17 +33,14 @@ The platform follows a microservices architecture with the following key compone
 git clone https://github.com/unklstewy/osk-iotcore.git
 cd osk-iotcore
 
-# Start the development environment
-docker-compose up -d
-
 # Install dependencies
-npm install
+go mod download
 
-# Run database migrations
-npm run migrate
+# Build the project
+go build -o osk-iotcore
 
-# Start the development server
-npm run dev
+# Run the on-screen keyboard
+./osk-iotcore
 ```
 
 ## Documentation
@@ -86,17 +76,18 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Roadmap
 
-- [ ] Enhanced device security protocols
-- [ ] Machine learning integration for predictive analytics
-- [ ] Mobile application for device management
-- [ ] Integration with major cloud platforms (AWS IoT, Azure IoT, Google Cloud IoT)
-- [ ] Advanced visualization and reporting capabilities
+- [ ] Complete Wayland protocol implementation
+- [ ] Full X11 support with input method integration
+- [ ] Theme and layout customization
+- [ ] Multi-language support
+- [ ] Configuration GUI
+- [ ] Performance optimizations
 
 ## Acknowledgments
 
-- Thanks to the open-source IoT community for inspiration and best practices
-- Special thanks to contributors and early adopters
+- Thanks to the Wayland and X11 communities for their excellent documentation
+- Special thanks to the Go community for providing robust libraries for GUI development
 
 ---
 
-**OSK IoT Core** - Empowering the Internet of Things
+**OSK IoT Core** - On-Screen Keyboard for Linux
